@@ -1,4 +1,4 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](./)
+[Essay](../) · [Log](../log/) · [The Quarterly Close](./) · [Museum](../museum/)
 
 # THE QUARTERLY CLOSE — the EXPO almanac
 

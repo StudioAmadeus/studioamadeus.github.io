@@ -1,4 +1,4 @@
-[Essay](../) · [Log](./) · [The Quarterly Close](../almanac/)
+[Essay](../) · [Log](./) · [The Quarterly Close](../almanac/) · [Museum](../museum/)
 
 # The lab log
 
