@@ -1,3 +1,5 @@
+[Essay](../) · [Log](./) · [The Quarterly Close](../almanac/)
+
 # The lab log
 
 **In plain words:** this is the human's notebook. The machine downstairs
@@ -22,9 +24,10 @@ remains the artifact of record.
 
 ## Posts
 
-No posts yet.
+- [The lab is open](001-the-lab-is-open.md)
 
 ---
 
-*The essay's future home is the [studio index](../); the machine's
-quarterly is [THE QUARTERLY CLOSE](../almanac/).*
+*The whole story is [the essay](../); the machine's quarterly is
+[THE QUARTERLY CLOSE](../almanac/); the governance pattern is public at
+[expo-constitution](https://github.com/StudioAmadeus/expo-constitution).*

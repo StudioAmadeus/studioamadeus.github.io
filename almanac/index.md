@@ -1,3 +1,5 @@
+[Essay](../) · [Log](../log/) · [The Quarterly Close](./)
+
 # THE QUARTERLY CLOSE — the EXPO almanac
 
 **In plain words:** every three months, the trading machine writes its own
@@ -43,5 +45,6 @@ No issues yet — the first close is **2026-12-31**.
 
 ---
 
-*The director's working notes live at [the lab log](../log/); the studio
-index is [here](../).*
+*The whole story is [the essay](../); the director's working notes live at
+[the lab log](../log/); the governance pattern is public at
+[expo-constitution](https://github.com/StudioAmadeus/expo-constitution).*
