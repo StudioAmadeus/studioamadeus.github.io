@@ -25,6 +25,8 @@ remains the artifact of record.
 ## Posts
 
 - [The lab is open](001-the-lab-is-open.md)
+- [We deleted 3,246 records from a machine that never deletes anything](002-the-purge.md)
+- [Fifteen trading ideas in, fourteen funerals](003-fifteen-trials-one-survivor.md)
 
 ---
 
