@@ -27,6 +27,7 @@ remains the artifact of record.
 - [Fifteen trading ideas in, fourteen funerals](003-fifteen-trials-one-survivor.md)
 - [We fact-checked ourselves. Here's what we got wrong.](004-we-fact-checked-ourselves.md)
 - [The machine can see the whole market now. It measured whether that's worth anything.](005-eyes-not-alpha.md)
+- [The machine rugged two of its own books by mistake](006-false-rug.md)
 
 ---
 
