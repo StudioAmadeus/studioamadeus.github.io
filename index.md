@@ -1,5 +1,3 @@
-[Essay](./) · [Log](log/) · [The Quarterly Close](almanac/) · [Museum](museum/)
-
 # My Trading Bot Has a Constitution
 
 *Constitution as governance for an AI trading system.*

@@ -4,7 +4,7 @@
 
 **Point-in-time honesty, stated as law:** every number is captured on its fixed offset or recorded as a gap — late measurements become gaps, never backfilled rows. **Survivorship disclosure:** this archive is everything seen since 2026-07-28.
 
-**1,340** launches in the honest-timed archive · 289 crash-flagged so far.
+**1,340** launches in the honest-timed archive · 295 crash-flagged so far.
 
 | death class | count | share of archive |
 |---|---|---|
