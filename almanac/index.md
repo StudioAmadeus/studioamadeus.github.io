@@ -1,5 +1,3 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](./) · [Museum](../museum/)
-
 # THE QUARTERLY CLOSE — the EXPO almanac
 
 **In plain words:** every three months, the trading machine writes its own

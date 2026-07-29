@@ -1,5 +1,3 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](../almanac/) · [Museum](./)
-
 # The self-catches gallery
 
 The exhibits here are my favorite part of the whole project: the times

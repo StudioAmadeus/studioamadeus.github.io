@@ -1,5 +1,3 @@
-[Essay](./) · [Log](log/) · [The Quarterly Close](almanac/) · [Museum](museum/)
-
 # Support
 
 If you found this interesting and want to buy me a coffee — or if this

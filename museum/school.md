@@ -1,5 +1,3 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](../almanac/) · [Museum](./)
-
 # The school mirror
 
 **In plain words:** the machine keeps a small library of lessons it teaches its own operator — one rides each daily digest, and one prints in the margin of every Quarterly Close. This wing mirrors the library's publishable subset (21 of 22 lessons; the remainder speak console vocabulary the public gate refuses, and are withheld rather than rewritten).

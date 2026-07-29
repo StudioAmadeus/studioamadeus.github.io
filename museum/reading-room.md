@@ -1,5 +1,3 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](../almanac/) · [Museum](./)
-
 # The reading room
 
 **In plain words:** everything the studio publishes, in one place.

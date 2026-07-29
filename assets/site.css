@@ -1,0 +1,229 @@
+/* Studio Amadeus — the almanack in print.
+   Cream paper, ink serif, oxblood accent; warm dark mode. Accent colors
+   validated against BOTH surfaces (dataviz six-checks, 2026-07-29):
+   #963c31 on #f7f3ea (light) · #c4685c on #211c15 (dark). No animation,
+   no celebration — the no-casino law extends to the public dress. */
+
+:root {
+  --paper: #f7f3ea;
+  --card: #fffdf6;
+  --ink: #262119;
+  --ink-soft: #5c5344;
+  --ink-muted: #8a7f6c;
+  --accent: #963c31;
+  --rule: #ddd3c1;
+  --rule-strong: #b9ad96;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #211c15;
+    --card: #2a241b;
+    --ink: #ece4d2;
+    --ink-soft: #bfb49e;
+    --ink-muted: #8f846f;
+    --accent: #c4685c;
+    --rule: #3a332a;
+    --rule-strong: #55493a;
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--paper); }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+/* ── masthead ── */
+.masthead {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.4rem 1.25rem 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem 1.4rem;
+  border-bottom: 3px double var(--rule-strong);
+}
+.brand {
+  font-variant: small-caps;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.mastnav { display: flex; flex-wrap: wrap; gap: 1.1rem; margin-left: auto; }
+.mastnav a {
+  font-variant: small-caps;
+  letter-spacing: 0.09em;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.mastnav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+/* ── type ── */
+h1 {
+  font-size: 1.85rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin: 1.6rem 0 0.8rem;
+}
+h2 {
+  font-size: 1.25rem;
+  margin: 2.4rem 0 0.7rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+}
+h3 {
+  font-size: 0.95rem;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  margin: 2rem 0 0.5rem;
+}
+p { margin: 0.85rem 0; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { color: var(--ink); }
+em { color: var(--ink-soft); }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule-strong);
+  width: 5rem;
+  margin: 2.5rem auto;
+}
+
+/* ── data: tables in the financial-print manner ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: 0.92rem;
+  font-variant-numeric: tabular-nums;
+  display: block;
+  overflow-x: auto;
+}
+th {
+  font-variant: small-caps;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-align: left;
+  padding: 0.35rem 0.9rem 0.35rem 0;
+  border-bottom: 2px solid var(--rule-strong);
+  white-space: nowrap;
+}
+td {
+  padding: 0.42rem 0.9rem 0.42rem 0;
+  border-bottom: 1px solid var(--rule);
+  vertical-align: top;
+}
+td:not(:first-child), th:not(:first-child) { text-align: right; }
+tr:last-child td { border-bottom: 0; }
+
+code {
+  font-family: ui-monospace, "Cascadia Mono", Consolas, monospace;
+  font-size: 0.82em;
+  color: var(--ink-soft);
+  background: var(--card);
+  padding: 0.08em 0.3em;
+  border-radius: 3px;
+}
+
+/* ── asides: lessons, stories, provenance ── */
+blockquote {
+  margin: 1.3rem 0;
+  padding: 0.7rem 1.1rem;
+  border-left: 3px solid var(--accent);
+  background: var(--card);
+  font-style: italic;
+  color: var(--ink-soft);
+}
+blockquote p { margin: 0.3rem 0; }
+
+.chart-about, .muted { color: var(--ink-muted); font-size: 0.95rem; }
+
+/* ── stat tiles (museum index) ── */
+.stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 0.8rem;
+  margin: 1.4rem 0;
+}
+.stat-tile {
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  padding: 0.7rem 0.9rem 0.6rem;
+}
+.stat-tile .n {
+  display: block;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+.stat-tile .k {
+  display: block;
+  font-variant: small-caps;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--ink-muted);
+  margin-top: 0.15rem;
+}
+
+/* ── figures / charts ── */
+figure.chart { margin: 1.6rem 0; }
+figure.chart svg { max-width: 100%; height: auto; display: block; }
+figure.chart figcaption {
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+  margin-top: 0.4rem;
+}
+
+/* ── post nav + colophon ── */
+.postnav {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+}
+.colophon {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem 2.5rem;
+  border-top: 3px double var(--rule-strong);
+  color: var(--ink-muted);
+  font-size: 0.88rem;
+}
+
+button.chip, button {
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  background: var(--card);
+  border: 1px solid var(--rule-strong);
+  border-radius: 3px;
+  padding: 0.2rem 0.7rem;
+  cursor: pointer;
+}
+button:hover { border-color: var(--accent); color: var(--accent); }

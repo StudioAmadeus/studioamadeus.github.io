@@ -1,5 +1,3 @@
-[Essay](../) · [Log](./) · [The Quarterly Close](../almanac/) · [Museum](../museum/)
-
 # The lab log
 
 **In plain words:** this is the human's notebook. The machine downstairs

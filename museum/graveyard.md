@@ -1,5 +1,3 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](../almanac/) · [Museum](./)
-
 # The graveyard hall
 
 **In plain words:** every trading idea this machine has tested and killed, on the record forever. Each was generated blind, locked with a fingerprint before any test ran, and judged by deterministic code against a bar that only rises. Dead ideas are the one cargo that always crosses the publication boundary — the living roster never renders here.

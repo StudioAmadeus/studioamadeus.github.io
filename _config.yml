@@ -1,6 +1,6 @@
-# Studio Amadeus — public surface. $0 by architecture (TC-47): GitHub Pages
-# stock theme, no build plugins, no accounts, no payments, no analytics
-# beyond what Pages itself ships. Markdown in, pages out.
+# Studio Amadeus — public surface. $0 by architecture (TC-47): GitHub Pages,
+# no theme, no plugins beyond the Pages defaults, no accounts, no payments,
+# no analytics. The dress is one hand-written stylesheet (assets/site.css)
+# and one layout — the almanack in print (director's word 2026-07-29).
 title: Studio Amadeus
 description: A small lab that builds a disciplined trading machine and publishes its receipts — the graveyard, not the returns.
-theme: jekyll-theme-primer

@@ -1,5 +1,3 @@
-[Essay](../) · [Log](../log/) · [The Quarterly Close](../almanac/) · [Museum](./)
-
 # League chapters
 
 **In plain words:** paper trading books live under a league constitution — fixed review clocks, promotion earned by verdict, demotion automatic. This wing shows COMPLETED stories only: a finished review with its verdict, a book's full ride after a move-on rule fires. Live standings never render here — the tape is not an exhibit.
