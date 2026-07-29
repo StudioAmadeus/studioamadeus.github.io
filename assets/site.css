@@ -215,6 +215,9 @@ figure.chart figcaption {
   color: var(--ink-muted);
   font-size: 0.88rem;
 }
+.footnav { margin: 0.2rem 0 0.6rem; }
+.footnav .toplink { margin-left: auto; }
+html { scroll-behavior: auto; } /* no smooth-scroll theater — the no-casino law */
 
 button.chip, button {
   font: inherit;
