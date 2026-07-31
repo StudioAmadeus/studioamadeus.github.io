@@ -2,7 +2,7 @@
 
 **In plain words:** every trading idea this machine has tested and killed, on the record forever. Each was generated blind, locked with a fingerprint before any test ran, and judged by deterministic code against a bar that only rises. Dead ideas are the one cargo that always crosses the publication boundary — the living roster never renders here.
 
-14 dead trials. The registry stamps registration; the gauntlet judges at the door, so each date below is both.
+19 dead trials. The registry stamps registration; the gauntlet judges at the door, so each date below is both.
 
 ## #2 — Panic-Selloff Snapback Reversion
 
@@ -113,6 +113,46 @@ Cause of death, verbatim from the verdict: lockbox: Sharpe 0 below bar 0.51 (ben
 Family `vigilance_conjunction` · died of **fee-killed** · registered & judged 2026-07-24 · manifest `33463010004e…` · spec `60db8a4a7abf…`
 
 Cause of death, verbatim from the verdict: working set: Sharpe -2.06 ≤ 0
+
+*The registry holds this trial's mechanism story, but its vocabulary does not clear the publication gate verbatim — the story is withheld, never rewritten. The epitaph above stands.*
+
+## #16 — Participation-Confirmed Range Escape with Trailing Ride
+
+Family `breakout` · died of **bar-killed** · registered & judged 2026-07-31 · manifest `1dcc17872198…` · spec `af6803762aef…`
+
+Cause of death, verbatim from the verdict: lockbox: Sharpe -2.76 below bar 0.54 (bench 0, formula 0.54)
+
+*The registry holds this trial's mechanism story, but its vocabulary does not clear the publication gate verbatim — the story is withheld, never rewritten. The epitaph above stands.*
+
+## #17 — Breadth-Held Multi-Month Momentum with Trailing Ride
+
+Family `trend` · died of **bar-killed** · registered & judged 2026-07-31 · manifest `5c81d5d5b9eb…` · spec `bce2cac42d43…`
+
+Cause of death, verbatim from the verdict: lockbox: Sharpe 0 below bar 0.54 (bench 0, formula 0.54)
+
+> Multi-month momentum in crypto majors comes from staged capital arrival: allocators, treasuries, and retail waves enter over weeks-to-months after a regime turn, so 4-6 month strength continues on average. The other side is the anchored crowd that sold early into strength and the underreacting holders who wait for 'confirmation' that arrives only after most of the move. This family is LIVE in the graveyard: the first variant was sign-stable at lockbox 0.41 and both kills sat FLAT through falling windows under a bare long-flat vocabulary. This variant fixes exactly that: entry is a strong 120-day momentum threshold (roc(120)>0.10) above a secular sma(200) filter, but the position is MANAGED — a 25% trailing stop on closes converts a regime rollover into a defined giveback instead of an abandoned round trip, and re-entry waits for a fresh signal reset. Applied equal-weight across seven majors with 4-5y daily depth so the verdict reflects the mechanism, not one chart. Daily cadence with multi-month lookbacks keeps trade count low enough that the fee toll is a rounding error per holding period.
+
+## #18 — Capitulation-Volume Dip Conjunction in Secular Uptrend
+
+Family `vigilance_conjunction` · died of **negative-evidence** · registered & judged 2026-07-31 · manifest `2e7753fccc47…` · spec `f80d6580e25a…`
+
+Cause of death, verbatim from the verdict: working set: Sharpe -0.19 ≤ 0
+
+> The setup is a three-way conjunction that fires a handful of times per year per coin and never on a schedule: (1) a secular uptrend intact (price above the 200d average), (2) a sharp one-week selloff worse than -12%, and (3) dollar volume surging (up 80%+ over the same week) — meaning the drop is accompanied by real capitulation flow, not quiet drift. The sellers in that moment are forced and impatient: leveraged longs being liquidated and retail panic-exiting into a market whose long-horizon holders have not left. They pay the toll; the edge is showing up EVERY time this fires — at 3am, mid-holiday, during maximum fear — which discretionary traders systematically fail to do. The volume leg is what separates this from the buried quiet-dip spec: without participation, a dip is drift and we stay out. Once in, a 15% trailing stop off the highest close manages the position mechanically — small stopped losses when the knife keeps falling, long rides when the snapback extends into trend resumption. A cross below the 200d average force-flats regardless, so we never hold through regime failure.
+
+## #19 — Euphoria-Abstinence Trend Hold
+
+Family `discipline_gated` · died of **bar-killed** · registered & judged 2026-07-31 · manifest `46d912721616…` · spec `8e6a78e368a9…`
+
+Cause of death, verbatim from the verdict: lockbox: Sharpe -1.55 below bar 0.54 (bench 0, formula 0.54)
+
+> The rule is trivially simple and psychologically near-impossible: hold the secular uptrend, but stand flat whenever the market goes parabolic. When a major is up 50%+ in 30 days, social feeds, funding, and headlines all scream to add — and that is exactly when marginal buyers are FOMO retail providing exit liquidity to earlier holders. Blowoff phases have the worst forward risk/reward in crypto: continuation gains are modest while drawdown tails are catastrophic. A human who knows this rule still cannot sit out the most exciting week of the cycle; the machine can, every time. The edge is perfect compliance: capture the boring middle of the trend (price above the 150d mean, momentum positive but not parabolic) and cede the euphoric last leg in exchange for skipping the crash that regularly follows it. Costs are paid by euphoria buyers who enter at parabolic extremes and by disciplined-in-theory traders who abandon the rule exactly when it matters. Long/flat regime on daily bars keeps the fee toll trivial — a handful of state changes per year per coin.
+
+## #20 — Banking-Week Flow Hold, Weekend Vacuum Abstinence
+
+Family `structural_mechanical` · died of **bar-killed** · registered & judged 2026-07-31 · manifest `a8b62937c805…` · spec `b9d3871882ee…`
+
+Cause of death, verbatim from the verdict: lockbox: Sharpe -1.88 below bar 0.54 (bench 0, formula 0.54)
 
 *The registry holds this trial's mechanism story, but its vocabulary does not clear the publication gate verbatim — the story is withheld, never rewritten. The epitaph above stands.*
 
