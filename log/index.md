@@ -30,6 +30,7 @@ remains the artifact of record.
 - [The machine rugged two of its own books by mistake](006-false-rug.md)
 - [A $53 deposit halted the whole machine — and found two bugs doing it](007-the-deposit-that-halted-everything.md)
 - [We asked if we were collecting the right data. The answer was no, four times.](008-are-we-collecting-the-right-data.md)
+- [Forty-eight hours after the archive got eyes, the first patterns](009-first-patterns.md)
 
 ---
 
