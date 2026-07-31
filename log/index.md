@@ -28,6 +28,8 @@ remains the artifact of record.
 - [We fact-checked ourselves. Here's what we got wrong.](004-we-fact-checked-ourselves.md)
 - [The machine can see the whole market now. It measured whether that's worth anything.](005-eyes-not-alpha.md)
 - [The machine rugged two of its own books by mistake](006-false-rug.md)
+- [A $53 deposit halted the whole machine — and found two bugs doing it](007-the-deposit-that-halted-everything.md)
+- [We asked if we were collecting the right data. The answer was no, four times.](008-are-we-collecting-the-right-data.md)
 
 ---
 
