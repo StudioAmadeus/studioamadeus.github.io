@@ -50,6 +50,7 @@ while read -r _local_ref local_sha _remote_ref remote_sha; do
     echo "TC-53 GUARD: push refused — private-set filename(s) in $range:"; echo "$bad"; exit 1
   fi
   for f in $files; do
+    case "$f" in .githooks/*) continue ;; esac  # the guard may name its own markers
     blob=$(git show "$local_sha:$f" 2>/dev/null || true)
     hits=$(check_blob "$blob")
     if [ -n "$hits" ]; then
