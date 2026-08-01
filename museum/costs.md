@@ -11,8 +11,8 @@
 | prob-ray | 3 | 233.66 | 0.16 | 6.7 | 0 |
 | rails | 1 | 87.59 | -0.02 | -2.2 | 0 |
 | s0-rebal | 5 | 387.33 | -0.01 | -0.3 | 0 |
-| s3-lite | 2 | 125.00 | 0.01 | 1 | 0 |
-| **total** | 17 | 1,318.15 | -0.11 | -0.8 | 0 |
+| s3-lite | 4 | 247.10 | 0.00 | 0.1 | 0 |
+| **total** | 19 | 1,440.25 | -0.12 | -0.8 | 0 |
 
 Measured from each FILL's own quote receipt: both legs valued in USD at the fill's mark, the gap being the quoted LP fee plus price impact actually paid. A negative total means the quoted route beat the mark used to value the legs — price improvement, recorded as-is. Paper mode charges no router or priority fee, and says so on every receipt (§5). Costs are facts, not verdicts — the referee already nets them.
 
