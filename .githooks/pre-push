@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+# TC-53 — the public-repo boundary guard (site). Refuses any push whose
+# commits touch the private set by NAME, or whose content carries private
+# markers. The discipline rule (absolute paths in cd-changing commands)
+# stands unchanged — this is the backstop, never the excuse.
+# Denylist amendable by ruling. Selftest: .githooks/pre-push --selftest
+set -euo pipefail
+
+DENY_NAMES='^(PHASELOG\.md|TASTE_CALLS\.md|PLAN\.md|HANDOFF\.md|PLANNER\.md|CLAUDE\.md|PLAN-skeleton\.md)$|^(reports|data)/|^\.env'
+DENY_CONTENT='adamw|AGE-SECRET-KEY|BEGIN [A-Z ]*PRIVATE KEY|HELIUS_API_KEY=|NTFY_TOPIC_[A-Z]*=|Next builder TC'
+
+check_names() {  # stdin: one filename per line → prints violations
+  grep -E "$DENY_NAMES" || true
+}
+
+check_blob() {  # $1: blob text → prints matching markers
+  grep -oE "$DENY_CONTENT" <<< "$1" | sort -u || true
+}
+
+if [ "${1:-}" = "--selftest" ]; then
+  fail=0
+  # seeded fixture MUST FAIL (TC-38c): a planted private filename refused
+  v=$(printf 'PHASELOG.md\nlog/ok.md\n' | check_names)
+  [ -n "$v" ] || { echo "SELFTEST FAIL: planted PHASELOG.md not refused"; fail=1; }
+  v=$(printf 'data/expo.db\n' | check_names)
+  [ -n "$v" ] || { echo "SELFTEST FAIL: planted data/ not refused"; fail=1; }
+  v=$(check_blob 'debrief fragment ... Next builder TC: TC-999')
+  [ -n "$v" ] || { echo "SELFTEST FAIL: planted debrief marker not refused"; fail=1; }
+  # control: clean input passes
+  v=$(printf 'log/012-post.md\nmuseum/index.md\n' | check_names)
+  [ -z "$v" ] || { echo "SELFTEST FAIL: clean names refused"; fail=1; }
+  v=$(check_blob 'an ordinary log post about receipts')
+  [ -z "$v" ] || { echo "SELFTEST FAIL: clean content refused"; fail=1; }
+  [ "$fail" = 0 ] && echo "SELFTEST PASS (guard can refuse and can allow)"
+  exit "$fail"
+fi
+
+ZERO=0000000000000000000000000000000000000000
+while read -r _local_ref local_sha _remote_ref remote_sha; do
+  [ "$local_sha" = "$ZERO" ] && continue  # branch deletion
+  if [ "$remote_sha" = "$ZERO" ]; then
+    files=$(git ls-tree -r --name-only "$local_sha")
+    range="$local_sha"
+  else
+    files=$(git diff --name-only "$remote_sha" "$local_sha")
+    range="$remote_sha..$local_sha"
+  fi
+  bad=$(printf '%s\n' "$files" | check_names)
+  if [ -n "$bad" ]; then
+    echo "TC-53 GUARD: push refused — private-set filename(s) in $range:"; echo "$bad"; exit 1
+  fi
+  for f in $files; do
+    blob=$(git show "$local_sha:$f" 2>/dev/null || true)
+    hits=$(check_blob "$blob")
+    if [ -n "$hits" ]; then
+      echo "TC-53 GUARD: push refused — private content marker(s) in $f: $hits"; exit 1
+    fi
+  done
+done
+exit 0
