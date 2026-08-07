@@ -33,6 +33,8 @@ remains the artifact of record.
 - [Forty-eight hours after the archive got eyes, the first patterns](009-first-patterns.md)
 - [Two alarms, both true, both already over](010-two-alarms.md)
 - [The generator hit a wall, and the wall went into the record](011-generator-wall.md)
+- [The machine told us it was fine. It was wrong four times.](012-the-machine-told-us-it-was-fine.md)
+- [The museum was about to publish 147,000 launches with a death table that was 100% unclassified](013-three-numbers-not-one.md)
 
 ---
 
