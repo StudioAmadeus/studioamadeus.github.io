@@ -1,6 +1,7 @@
-# Studio Amadeus — public surface. $0 by architecture (TC-47): GitHub Pages,
-# no theme, no plugins beyond the Pages defaults, no accounts, no payments,
-# no analytics. The dress is one hand-written stylesheet (assets/site.css)
-# and one layout — the almanack in print (director's word 2026-07-29).
+# Studio Amadeus — the hub at the root of studioamadeus.github.io. $0 by
+# architecture: GitHub Pages, no theme, no plugins beyond the Pages defaults,
+# no accounts, no payments, no analytics. The dress is one hand-written
+# stylesheet (assets/site.css) and one layout — the almanack in print.
+# baseurl stays empty: this is a user site serving from root.
 title: Studio Amadeus
-description: A small lab that builds a disciplined trading machine and publishes its receipts — the graveyard, not the returns.
+description: A small independent studio. One card per thing it has made; each card links out to the thing itself.

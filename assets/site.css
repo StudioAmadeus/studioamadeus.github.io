@@ -230,3 +230,29 @@ button.chip, button {
   cursor: pointer;
 }
 button:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── the hub: one card per thing. Name, description, status; the whole
+   card is the link. Adding a card is copying one <li>. ── */
+.lead { margin-top: 2.2rem; font-size: 1.08rem; }
+.cards { list-style: none; margin: 1.6rem 0; padding: 0; display: grid; gap: 0.9rem; }
+.card {
+  display: block;
+  background: var(--card);
+  border: 1px solid var(--rule);
+  border-top: 3px solid var(--accent);
+  padding: 0.85rem 1.1rem 0.9rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.card:hover { border-color: var(--accent); text-decoration: none; }
+.card-head { display: flex; align-items: baseline; gap: 0.8rem; }
+.card-name { font-variant: small-caps; letter-spacing: 0.12em; font-weight: 700; font-size: 1.08rem; }
+.card-status {
+  margin-left: auto;
+  font-variant: small-caps;
+  letter-spacing: 0.09em;
+  font-size: 0.85rem;
+  color: var(--ink-muted);
+}
+.card-status.live { color: var(--accent); }
+.card-desc { display: block; margin-top: 0.35rem; color: var(--ink-soft); }
