@@ -100,4 +100,4 @@ That's it working.
 
 ---
 
-*If you found this interesting and want to buy me a coffee — or if this helped you and you want to pay it back — [here's the option](support).*
+*If you found this interesting and want to buy me a coffee — or if this helped you and you want to pay it back — [here's the option](/support).*
