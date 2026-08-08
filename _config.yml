@@ -4,12 +4,3 @@
 # and one layout — the almanack in print (director's word 2026-07-29).
 title: Studio Amadeus
 description: A small lab that builds a disciplined trading machine and publishes its receipts — the graveyard, not the returns.
-
-# TC-144 (2026-08-08): EXPO's surface lives under /expo/; its pages carry no
-# front matter (published files are byte-immutable), so the layout binds here.
-# Scoped to the expo/ path only — root and everything else is untouched.
-defaults:
-  - scope:
-      path: "expo"
-    values:
-      layout: "expo"
