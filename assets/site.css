@@ -256,3 +256,21 @@ button:hover { border-color: var(--accent); color: var(--accent); }
 }
 .card-status.live { color: var(--accent); }
 .card-desc { display: block; margin-top: 0.35rem; color: var(--ink-soft); }
+.card-preview {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  margin-bottom: 0.65rem;
+  background: var(--paper);
+  pointer-events: none;
+}
+.card-preview iframe {
+  width: 200%;
+  height: 200%;
+  border: 0;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+}
